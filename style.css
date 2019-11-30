@@ -1,0 +1,206 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+div.wrapper {
+  max-width: 1000px;
+  padding-top: 20px;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+}
+/* IMG-CONTAINER */
+.img-container {
+  position: relative;
+  background-color: #401002;
+}
+
+img {
+  width: 100%;
+  opacity: 0.7;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  letter-spacing: 5px;
+  color: whitesmoke;
+  text-shadow: 4px 4px 4px black;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: "Architects Daughter", cursive, sans-serif;
+}
+
+/* ARROW */
+span.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-size: 5rem;
+  display: block;
+  padding: 20px 20px 25px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: whitesmoke;
+  opacity: 0.5;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+/* DOTS*/
+.dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+  text-align: center;
+  line-height: 30px;
+}
+
+span.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.7;
+  margin: 0 5px;
+}
+
+.dot.selected {
+  opacity: 1;
+}
+
+/* PLAY BTN */
+.play {
+  position: absolute;
+  right: 2px;
+  bottom: 0px;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.fas {
+  display: none;
+}
+.icon-show {
+  display: block;
+}
+
+/* SPAN HOVER */
+span:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  div.wrapper {
+    max-width: 800px;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+
+  span.arrow {
+    font-size: 5rem;
+    padding: 10px 12px 18px 12px;
+  }
+
+  .dots {
+    height: 25px;
+    line-height: 25px;
+  }
+
+  .play {
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 823px) {
+  div.wrapper {
+    max-width: 500px;
+  }
+  h1 {
+    font-size: 6rem;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  span.arrow {
+    font-size: 3rem;
+    padding: 10px 10px 15px 10px;
+    opacity: 1;
+  }
+
+  .dots {
+    height: 20px;
+    line-height: 20px;
+  }
+
+  span.dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .play {
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 568px) {
+  div.wrapper {
+    max-width: 300px;
+  }
+  h1 {
+    font-size: 4rem;
+    text-shadow: 1px 1px 4px black;
+  }
+
+  span.arrow {
+    position: absolute;
+    font-size: 2rem;
+    padding: 7px 7px 10px 7px;
+    opacity: 1;
+  }
+
+  .dots {
+    height: 15px;
+    line-height: 15px;
+  }
+
+  span.dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .play {
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+  }
+}

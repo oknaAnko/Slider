@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Slider</title>
+    <script
+      src="https://kit.fontawesome.com/59e122674d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="img-container">
+          <img src="img/me_today.jpg" alt="route" class="slide" />
+          <h1 class="slide">me</h1>
+        </div>
+
+        <span class="arrow prev">&laquo;</span>
+        <span class="arrow next">&raquo;</span>
+
+        <div class="dots">
+          <span class="dot selected"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <button class="play">
+            <i class="fas fa-play icon-show"></i><i class="fas fa-pause"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
